@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { Episode } from '../types/Episode';
+import { formatDateForShow } from '../utils';
 
 
 interface ListItemEpisodesProps {
@@ -14,8 +15,8 @@ export function ListItemEpisodes({ episode }: ListItemEpisodesProps) {
     >
       <h3 className="text-xl font-bold text-gray-900 mb-2">{episode.name}</h3>
       <p className="text-sm font-medium text-blue-600 mb-3">{episode.episode}</p>
-      <p className="text-gray-600 text-sm mb-1">Дата выхода: {new Date(episode.air_date).toLocaleDateString('ru-RU')}</p>
-      <p className="text-gray-600 text-sm">Дата создания: {new Date(episode.created).toLocaleDateString('ru-RU')}</p>
+      <p className="text-gray-600 text-sm mb-1">Дата выхода: {formatDateForShow(episode.air_date)}</p>
+      <p className="text-gray-600 text-sm">Дата создания: {formatDateForShow(episode.created)}</p>
     </Link>
   );
 }

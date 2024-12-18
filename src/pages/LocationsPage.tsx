@@ -1,4 +1,6 @@
 import { Link } from 'react-router';
+import { locationsData } from '../data';
+import { ListLocations } from '../components/ListLocations';
 
 export function LocationsPage() {
   return (
@@ -6,9 +8,9 @@ export function LocationsPage() {
       <Link to="/">← На главную</Link>
       
       <h1>Локации</h1>
-      
+
       <div className="locations-grid">
-        {/* Здесь будет список локаций */}
+        <ListLocations locations={locationsData} />
       </div>
     </div>
   );
