@@ -1,4 +1,6 @@
 import { Link } from 'react-router';
+import { ListCharacters } from '../components/ListCharacters';
+import { charactersData } from '../data';
 
 export function CharactersPage() {
   return (
@@ -8,7 +10,7 @@ export function CharactersPage() {
       <h1>Персонажи</h1>
       
       <div className="characters-grid">
-        {/* Здесь будет список персонажей */}
+        <ListCharacters characters={charactersData}/>
       </div>
     </div>
   );
