@@ -8,6 +8,7 @@ import {
   CharactersPage,
   CharactersDetailPage,
 } from '../pages';
+import './App.css';
 
 export function App() {
 
