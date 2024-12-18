@@ -1,9 +1,9 @@
-import episodes from './episode.json';
-import characters from './characters.json';
-import locations from './location.json';
+import episodesData from './episode.json';
+import charactersData from './characters.json';
+import locationsData from './location.json';
 
 export {
-  episodes,
-  characters,
-  locations
+  episodesData,
+  charactersData,
+  locationsData
 }

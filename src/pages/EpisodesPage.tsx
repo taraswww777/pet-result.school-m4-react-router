@@ -1,4 +1,6 @@
 import { Link } from 'react-router';
+import { episodesData } from '../data';
+import { ListEpisodes } from '../components/ListEpisodes';
 
 export function EpisodesPage() {
   return (
@@ -9,6 +11,7 @@ export function EpisodesPage() {
       
       <div className="episodes-grid">
         {/* Здесь будет список эпизодов */}
+        <ListEpisodes episodes={episodesData}/>
       </div>
     </div>
   );
